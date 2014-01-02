@@ -2,6 +2,7 @@ LIBDIRS=\
 	lib9\
 	libbio\
 	libregexp\
+	libthread\
 
 all: build-libs
 install: install-libs

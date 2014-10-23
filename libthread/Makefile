@@ -24,7 +24,8 @@ $(LIB): $(HFILES) $(OFILES)
 	$(AR) $(ARFLAGS) $(LIB) $(OFILES)
 
 .c.o:
-	$(CC) $(CFLAGS) -o $@ -c $<
+	@echo $(CC) -o $@ -c $<
+	@$(CC) $(CFLAGS) -o $@ -c $<
 
 FreeBSD.o: BSD.c
 NetBSD.o: Linux.c

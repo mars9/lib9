@@ -30,7 +30,8 @@ $(LIB): $(HFILES) $(OFILES)
 	$(AR) $(ARFLAGS) $(LIB) $(OFILES)
 
 .c.o:
-	$(CC) $(CFLAGS) -o $@ -c $<
+	@echo $(CC) -o $@ -c $<
+	@$(CC) $(CFLAGS) -o $@ -c $<
 
 install: all
 	install -m 644 $(HFILES) $(PREFIX)/include

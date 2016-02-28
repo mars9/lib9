@@ -3,7 +3,7 @@ PREFIX=/usr/local
 CC=cc
 AR=ar
 INSTALL=install
-CFLAGS+=-Wall -Wno-parentheses -Wno-missing-braces -Wno-unneeded-internal-declaration
+CFLAGS+=-Wall -Wno-parentheses -Wno-missing-braces -Wno-unneeded-internal-declaration -Wno-deprecated-declarations
 ARFLAGS=rsc
 
 SYSNAME=$(shell uname)
